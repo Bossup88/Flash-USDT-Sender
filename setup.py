@@ -72,5 +72,5 @@ with zipfile.ZipFile(dir_name + '.zip', 'w', zipfile.ZIP_DEFLATED) as zf:
     for dirpath, dirnames, filenames in os.walk(dir_name):
         for filename in filenames:
             zf.write(os.path.join(dirpath, filename))
+            
 
-print dir_name
